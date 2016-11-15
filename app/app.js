@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.work',
   'myApp.research',
+  'myApp.education',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

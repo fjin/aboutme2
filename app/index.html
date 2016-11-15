@@ -12,13 +12,20 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="work/work.css">
+  <link rel="stylesheet" href="research/research.css">
+  <link rel="stylesheet" href="education/education.css">
 
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.css">
   
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body ng-controller="FanJinCtrl">
+
+<div class="background-image"></div>
+<div class="content">
 
 
 <nav class="navbar navbar-default">
@@ -38,6 +45,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li ng-class="{active: '{{location.path()}}'=='/work'}"><a href="#!/work" ng-click="changeView('work', $event)">work</a></li>
+        <li ng-class="{active: '{{location.path()}}'=='/education'}"><a href="#!/education" ng-click="changeView('education', $event)">Education</a></li>
         <li ng-class="{active: '{{location.path()}}'=='/research'}"><a href="#!/research" ng-click="changeView('research',$event)">research</a></li>
         
       </ul>
@@ -50,10 +58,14 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
+  <div class="container-fluid">
   <div ng-view></div>
 
+  </div>
+
   <div>Angular seed app: v<span app-version></span></div>
+
+  </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -63,6 +75,7 @@
   <script src="app.js"></script>
   <script src="research/research.js"></script>
   <script src="work/work.js"></script>
+  <script src="education/education.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

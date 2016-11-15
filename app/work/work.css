@@ -1,0 +1,38 @@
+.work-container {
+	text-align: center;
+}
+
+.logo {
+	height: 50px;
+}
+
+.bio-container{
+	text-align: center;
+}
+
+.title {
+	padding: 20px;
+}
+
+
+.title h3{
+	font-family: Papyrus, fantasy;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 15.4px;
+}
+
+.skills{
+	padding: 20px;
+	font-family: Papyrus, fantasy;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 15.4px;
+	font-size: 20px;
+
+}
+
+.company-name{
+	padding: 10px;
+}
