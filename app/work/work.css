@@ -1,5 +1,6 @@
 .work-container {
 	text-align: center;
+	padding-bottom: 30px;
 }
 
 .logo {
@@ -11,7 +12,7 @@
 }
 
 .title {
-	padding: 20px;
+	/*padding: 20px;*/
 }
 
 
@@ -35,4 +36,13 @@
 
 .company-name{
 	padding: 10px;
+}
+
+.years{
+	padding-top: 10px;
+	font-family: Georgia,Times,Times New Roman,serif; 
+	font-style: normal;
+	font-variant: normal;
+	line-height: 15.4px;
+	font-size: 20px;
 }

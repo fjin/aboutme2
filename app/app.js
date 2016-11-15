@@ -18,7 +18,10 @@ controller('FanJinCtrl', ['$scope', '$element', '$location', function($scope, $e
 	self.location = $location;
 
 	$scope.changeView = function(path,$event){
-		$($event.currentTarget.parentElement).siblings().toggleClass("active");
-		$($event.currentTarget.parentElement).toggleClass("active");
+		$($event.currentTarget.parentElement).siblings().removeClass("active");
+		$($event.currentTarget.parentElement).addClass("active");
+    
+    $(".navbar-toggle").click();
+    
 	}
 }]);
